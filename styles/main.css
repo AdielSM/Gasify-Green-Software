@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* Paleta de cores do Gasify */
+    --gasify-fundo: #e4dbd2;
+    --gasify-verde-claro: #60a851;
+    --gasify-verde: #377f33;
+    --gasify-verde-escuro: #112410;
+}
