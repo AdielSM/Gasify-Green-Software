@@ -8,7 +8,7 @@ export const products = [
     {
         id: '6921ea3a-1f91-44cc-84b9-f61957284fe8',
         name: 'Gasolina Aditivada',
-        price: 569,
+        price: 669,
         cc_for_unit: .2 
     },
     {
@@ -18,4 +18,3 @@ export const products = [
         cc_for_unit: 1
     }
 ]
-

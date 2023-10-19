@@ -11,9 +11,12 @@
     --gasify-verde-claro: #60a851;
     --gasify-verde: #377f33;
     --gasify-verde-escuro: #112410;
-    
+    --gasify-cinza-claro: #848484;
+    --gasify-cinza: #525252;
+    --gasify-preto: #222381;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
 }
+
