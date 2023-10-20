@@ -5,7 +5,7 @@
 > - [ ] Alinhar cards para ficar 2x2
 > - [ ] Atualizar saldo total e crédito total dinamicamente
 > - [ ] Atualizar créditos do card (com valor total e cor)
-> - [ ] Validar input de litro e gasolina (tirar negativo)
+> - [X] Validar input de litro e gasolina (tirar negativo)
 > - [ ] O dividir por 100 pode ser uma função importada de util (formatAlgo)
 - [ ] Use seus créditos de carbono!
 - [ ] Pagamento

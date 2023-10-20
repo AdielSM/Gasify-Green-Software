@@ -35,12 +35,19 @@ function onChangeInputLitro(event, preco) {
     const inputValor = event.target.parentElement.parentElement.querySelector("#valor")
     const valor = litro * preco
 
-    inputValor.value = valor.toFixed(2)
+    inputValor.value = validateInput(valor).toFixed(2)
 }
 function onChangeInputValor(event, preco) {
   const valor = Number(event.target.value)
   const inputLitro = event.target.parentElement.parentElement.querySelector("#quantidade")
   const litro = valor / preco
 
-  inputLitro.value = litro.toFixed(2)
+  inputLitro.value = validateInput(valor).toFixed(2)
+}
+
+function validateInput(input) {
+  if (input < 0) {
+    return 0;
+  }
+  return input;
 }
