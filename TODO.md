@@ -6,7 +6,7 @@
 > - [ ] Atualizar saldo total e crédito total dinamicamente
 > - [ ] Atualizar créditos do card (com valor total e cor)
 > - [X] Validar input de litro e gasolina (tirar negativo)
-> - [ ] O dividir por 100 pode ser uma função importada de util (formatAlgo)
+> - [X] O dividir por 100 pode ser uma função importada de util (formatAlgo)
 - [ ] Use seus créditos de carbono!
 - [ ] Pagamento
 - [ ] Confirmação de pagamento

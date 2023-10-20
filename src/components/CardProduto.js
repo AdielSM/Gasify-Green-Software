@@ -7,16 +7,16 @@ export default function CardProduto() {
       let productHTML = `<div id="card" class="shadow-md rounded-lg space-y-8 mx-auto mb-4">
       <div id="tipo-preco" class="flex m-4 justify-between">
           <p class="font-semibold text-2xl">${product.name}</p>
-          <p>R$ ${product.price / 100}/Litro</p>
+          <p>R$ ${formatNumberPer100(product.price)}/Litro</p>
       </div>
       <div class="flex space-x-4 mx-4 justify-between flex-wrap">
           <div class="space-y-2">
               <p class="text-md">Litros (L)</p>
-              <input type="number" oninput="onChangeInputLitro(event, ${product.price / 100})" class="border-[--gasify-cinza] border-2 rounded-md p-2 " id="quantidade" placeholder="0"/>
+              <input type="number" oninput="onChangeInputLitro(event, ${formatNumberPer100(product.price)})" class="border-[--gasify-cinza] border-2 rounded-md p-2 " id="quantidade" placeholder="0"/>
           </div>
           <div class="space-y-2">
               <p class="text-md">Valor (R$)</p>
-              <input type="number" oninput="onChangeInputValor(event, ${product.price / 100})" class="border-[--gasify-cinza] border-2 rounded-md p-2" id="valor" placeholder="0,00"/>
+              <input type="number" oninput="onChangeInputValor(event, ${formatNumberPer100(product.price)})" class="border-[--gasify-cinza] border-2 rounded-md p-2" id="valor" placeholder="0,00"/>
           </div>
       </div>
       <div class="bg-[--gasify-cinza] w-[100%] mt-2 text-white text-center font-medium p-1 rounded-bl-md rounded-br-md">
@@ -30,6 +30,7 @@ export default function CardProduto() {
 
 window.onChangeInputLitro = onChangeInputLitro
 window.onChangeInputValor = onChangeInputValor
+
 function onChangeInputLitro(event, preco) {
     const litro = Number(event.target.value)
     const inputValor = event.target.parentElement.parentElement.querySelector("#valor")
@@ -42,7 +43,7 @@ function onChangeInputValor(event, preco) {
   const inputLitro = event.target.parentElement.parentElement.querySelector("#quantidade")
   const litro = valor / preco
 
-  inputLitro.value = validateInput(valor).toFixed(2)
+  inputLitro.value = validateInput(litro).toFixed(2)
 }
 
 function validateInput(input) {
@@ -50,4 +51,8 @@ function validateInput(input) {
     return 0;
   }
   return input;
+}
+
+function formatNumberPer100(number) {
+  return number / 100;
 }
