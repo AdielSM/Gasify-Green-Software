@@ -50,12 +50,12 @@ function atualizarCC(actualCard, litro=0) {
   const ccValueTag = actualCard.querySelector('#cc-value')
   const cc_for_unit = Number(ccValueTag.dataset.cc_for_unit)
   const ccValue = cc_for_unit * litro;
-  
+
   if (ccValue > 0) {
     actualCard.querySelector('#cc-value').textContent = `+ ${ccValue.toFixed(2)} CC`;
     ccValueTag.classList.remove('bg-[--gasify-cinza]')
     ccValueTag.classList.add('bg-[--gasify-verde]')
-  } else {
+  } else if (ccValue <= 0 || litro < 0) {
     actualCard.querySelector('#cc-value').textContent = `+ ${cc_for_unit.toFixed(2)} CC por litro!`;
     ccValueTag.classList.remove('bg-[--gasify-verde]')
     ccValueTag.classList.add('bg-[--gasify-cinza]')
