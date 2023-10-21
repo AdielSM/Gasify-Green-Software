@@ -16,5 +16,5 @@ export const products = [
         name: 'Etanol',
         price: 399,
         cc_for_unit: 1
-    }
+    },
 ]

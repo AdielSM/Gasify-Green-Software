@@ -4,8 +4,7 @@ import { formatNumberPer100 } from "./Utils";
 export default function CardProduto() {
   return (
       products.map(product =>{
-    
-      let productHTML = `<div id="card" class="shadow-md rounded-lg space-y-8 mx-auto mb-4">
+      let productHTML = `<div id="card" class="shadow-2xl shadow-inner rounded-lg space-y-8 mx-auto mb-4">
       <div id="tipo-preco" class="flex m-4 justify-between">
           <p class="font-semibold text-2xl">${product.name}</p>
           <p>R$ ${formatNumberPer100(product.price)}/Litro</p>
@@ -56,7 +55,7 @@ function atualizarCC(actualCard, litro=0) {
     actualCard.querySelector('#cc-value').textContent = `+ ${ccValue.toFixed(2)} CC`;
     ccValueTag.classList.remove('bg-[--gasify-cinza]')
     ccValueTag.classList.add('bg-[--gasify-verde]')
-  } else if (ccValue <= 0 || litro < 0) {
+  } else if (ccValue <= 0 || litro < 0) { // não seria só um else??
     actualCard.querySelector('#cc-value').textContent = `+ ${cc_for_unit.toFixed(2)} CC por litro!`;
     ccValueTag.classList.remove('bg-[--gasify-verde]')
     ccValueTag.classList.add('bg-[--gasify-cinza]')

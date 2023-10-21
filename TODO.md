@@ -2,7 +2,7 @@
 
 - [ ] Trocar parte do atendimento de acordo com clique de nav
 - [ ] Escolha de Produto
-> - [ ] Alinhar cards para ficar 2x2
+> - [X] Alinhar cards para ficar 2x2
 > - [ ] Atualizar saldo total e crédito total dinamicamente
 > - [X] Atualizar créditos do card (com valor total e cor)
 > - [X] Validar input de litro e gasolina (tirar negativo)
