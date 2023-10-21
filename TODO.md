@@ -3,7 +3,7 @@
 - [ ] Trocar parte do atendimento de acordo com clique de nav
 - [ ] Escolha de Produto
 > - [X] Alinhar cards para ficar 2x2
-> - [ ] Atualizar saldo total e crédito total dinamicamente
+> - [X] Atualizar saldo total e crédito total dinamicamente
 > - [X] Atualizar créditos do card (com valor total e cor)
 > - [X] Validar input de litro e gasolina (tirar negativo)
 > - [X] O dividir por 100 pode ser uma função importada de util (formatAlgo)
