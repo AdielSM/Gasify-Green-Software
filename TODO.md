@@ -11,7 +11,7 @@
 - [ ] Pagamento
 - [ ] Confirmação de pagamento
 - [ ] Representação da página atual no nav (função Active na cor Verde)
-- [ ] Fazer rodapé com ondas verdes e plantinha :3
+- [X] Fazer rodapé com ondas verdes e plantinha :3 
 
 ## Extra
 
