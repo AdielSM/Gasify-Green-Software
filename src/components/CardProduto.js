@@ -1,4 +1,5 @@
 import { products } from "../data/products";
+import { formatNumberPer100 } from "./Utils";
 
 export default function CardProduto() {
   return (
@@ -74,17 +75,4 @@ function onChangeInputValor(event, preco) {
   inputLitro.value = litro.toFixed(2)
 
   atualizarCC(event.target.closest('#card'), litro)
-}
-
-// Pensar em algo visual pro erro
-// function validateInput(input) {
-//   if (input < 0) {
-//     return 0;
-//   }
-//   return input;
-// }
-
-// Levar pra utils
-function formatNumberPer100(number) {
-  return number / 100;
 }
