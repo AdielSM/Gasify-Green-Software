@@ -1,6 +1,7 @@
 # To-Do
 
 - [ ] Trocar parte do atendimento de acordo com clique de nav
+- [ ] Corrigir index vazio
 - [ ] Escolha de Produto
 > - [X] Alinhar cards para ficar 2x2
 > - [X] Atualizar saldo total e crédito total dinamicamente
@@ -13,6 +14,11 @@
 - [ ] Representação da página atual no nav (função Active na cor Verde)
 - [X] Fazer rodapé com ondas verdes e plantinha :3 
 
-## Extra
+## Dúvidas
+? Script específico de uma página fica em src ou src/pages, por exemplo?
+? Está correto importar de atendimento para o componente cardProduto? Como melhorar?
 
+## Extra
 - [ ] balanço de carbono
+- [ ] Melhorar IDs com Atomic Design
+- [ ] Corrigir IDs não únicos no HTML
