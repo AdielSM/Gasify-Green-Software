@@ -11,6 +11,10 @@ import CardProduto from "./components/CardProduto";
   // if (window.localStorage.getItem('@gasify-carrinho') === null) {
   window.localStorage.setItem("@gasify-carrinho", JSON.stringify([]));
   // }
+
+  // document.getElementsByName('form').forEach(form => {
+  //   form.onsubmit (event) => event.prevent.default
+  // })
 })();
 
 export function atualizarCarrinho(itemCarrinho) {
