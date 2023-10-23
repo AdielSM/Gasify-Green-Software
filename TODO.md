@@ -1,6 +1,5 @@
 # To-Do
 
-- [ ] Trocar parte do atendimento de acordo com clique de nav
 - [ ] Corrigir index vazio
 - [ ] Escolha de Produto
 > - [X] Alinhar cards para ficar 2x2
@@ -8,9 +7,11 @@
 > - [X] Atualizar créditos do card (com valor total e cor)
 > - [X] Validar input de litro e gasolina (tirar negativo)
 > - [X] O dividir por 100 pode ser uma função importada de util (formatAlgo)
-- [ ] Use seus créditos de carbono!
-- [ ] Pagamento
-- [ ] Confirmação de pagamento
+> - [ ] Melhorar estilização de cards e disposição na tela
+- [ ] Form Use seus créditos de carbono!
+- [ ] Form Pagamento
+- [ ] Form Confirmação de pagamento
+- [ ] Trocar parte do atendimento de acordo com clique de nav
 - [ ] Representação da página atual no nav (função Active na cor Verde)
 - [X] Fazer rodapé com ondas verdes e plantinha :3 
 

@@ -1,35 +1,52 @@
-import { products } from './data/products.js';
+import { products } from "./data/products.js";
 
-import CardProduto from './components/CardProduto';
+import CardProduto from "./components/CardProduto";
 
-const cardCombustiveis = document.querySelector('#card-combustiveis');
-cardCombustiveis.innerHTML = products.map(CardProduto).join('');
+// Executa ao iniciar o script
+(() => {
+  const cardCombustiveis = document.querySelector("#card-combustiveis");
+  cardCombustiveis.innerHTML = products.map(CardProduto).join("");
 
-export function atualizarValorTotal() {
-    const cards = document.querySelectorAll('#card')
-    let total = 0
-  
-    cards.forEach(card => {
-      const valor = Number(card.querySelector('#valor').value)
-      total += valor
-    })
-  
-    document.querySelector('#total').textContent = `R$ ${total.toFixed(2)}`
-  
-    return total
+  // Comentei porque poderia guardar de atendimento anterior, precisa lidar com isso!
+  // if (window.localStorage.getItem('@gasify-carrinho') === null) {
+  window.localStorage.setItem("@gasify-carrinho", JSON.stringify([]));
+  // }
+})();
+
+export function atualizarCarrinho(itemCarrinho) {
+  const carrinho = JSON.parse(window.localStorage.getItem("@gasify-carrinho"));
+  if (carrinho && carrinho.find((item) => item.id === itemCarrinho.id)) {
+    let indexItem = carrinho.findIndex((item) => item.id === itemCarrinho.id);
+
+    if (itemCarrinho.quantidade === 0) {
+      carrinho.splice(indexItem, 1);
+    } else {
+      carrinho[indexItem] = itemCarrinho;
+    }
+  } else {
+    carrinho.push(itemCarrinho);
   }
-  
-export function atualizarCCTotal() {
-const cards = document.querySelectorAll('#card')
-let total = 0
 
-cards.forEach(card => {
-    const ccValueTag = card.querySelector('#cc-value')
-    const ccValue = Number(ccValueTag.textContent.split(' ')[1])
-    total += ccValue
-})
+  window.localStorage.setItem("@gasify-carrinho", JSON.stringify(carrinho));
 
-document.querySelector('#total-cc').innerHTML = `<img src="./images/logoLS-no-bg.svg" class="mr-2" alt="créditos de carbono"/>${total.toFixed(2)} CC`
+  const valorTotal = carrinho.reduce((acc, item) => acc + item.valor, 0);
+  const ccTotal = carrinho.reduce(
+    (acc, item) => acc + item.cc_for_unit * item.quantidade,
+    0
+  );
 
-return total
+  atualizarValorTotal(valorTotal);
+  atualizarCCTotal(ccTotal);
+}
+
+function atualizarValorTotal(valorTotal) {
+  document.querySelector("#total").textContent = `R$ ${valorTotal.toFixed(2)}`;
+}
+
+function atualizarCCTotal(ccTotal) {
+  document.querySelector(
+    "#total-cc"
+  ).innerHTML = `<img src="./images/logoLS-no-bg.svg" class="mr-2" alt="créditos de carbono"/>${ccTotal.toFixed(
+    2
+  )} CC`;
 }

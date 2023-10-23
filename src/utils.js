@@ -1,3 +1,3 @@
 export function formatNumberPer100(number) {
-    return number / 100;
-  }
+  return number / 100;
+}
