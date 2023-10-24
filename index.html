@@ -3,10 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="icon" href="./images/logoLS-no-bg.svg" type="image/x-icon" />
+
     <title>Gasify</title>
   </head>
-  <body>
+  <body class="bg-[--gasify-branco] min-h-[90vh]">
+    <div class="scale-90 w-full mt-[-44px]">
+      <header
+        class="bg-white content-center flex rounded-3xl justify-between mx-10 mt-2 mb-6 p-4 shadow-md"
+      >
+        <div
+          id="gasify-logo"
+          class="flex content-center items-center space-x-2"
+        >
+          <img src="./images/logoLS-no-bg.svg" alt="Gasify logo" class="" />
+          <img src="./images/gasify.svg" alt="Gasify" />
+        </div>
+        <div class="flex justify-between items-center">
+          <img src="./images/logo_posto.svg" alt="Logo posto canaã" />
+          <p class="text-[--gasify-preto-claro] ml-8">
+            Rede de Postos de Combustível Canaã
+          </p>
+        </div>
+        <div class="flex justify-between items-center">
+          <img
+            class="max-w-10 max-h-10 rounded-full m-2"
+            id="user"
+            src="./images/FrentistaLC.jpg"
+            alt="User icon"
+          />
+          <div id="username">
+            <p class="text-[--gasify-preto-claro] text-center">Bem-vindo</p>
+            <span class="font-semibold">Luiz Carlos!</span>
+          </div>
+          <img
+            id="arrow"
+            src="./images/icons/logout.svg"
+            alt="Arrow icon"
+            class="ml-12 w-7"
+          />
+        </div>
+      </header>
+
+      <nav class="flex justify-around space-x-8 mx-4 my-14 text-center">
+        <p
+          class="w-[100%] font-medium border-[--gasify-preto] border-b-2 cursor-pointer text-[--gasify-preto] transition-all hover:border-b-[--gasifty-cinza] hover:text-[--gasify-cinza]"
+          id="nav-escolha-produto"
+        >
+          Abastecimento
+        </p>
+        <p
+          class="w-[100%] font-medium border-[--gasify-preto-claro] border-b-2 cursor-pointer text-[--gasify-cinza-claro] transition-all hover:border-b-[--gasifty-cinza] hover:text-[--gasify-cinza]"
+          id="nav-uso-cc"
+        >
+          Use seus créditos de carbono!
+        </p>
+        <p
+          class="w-[100%] font-medium border-[--gasify-preto-claro] border-b-2 cursor-pointer text-[--gasify-cinza-claro] transition-all hover:border-b-[--gasifty-cinza] hover:text-[--gasify-cinza]"
+          id="nav-pagamento"
+        >
+          Pagamento
+        </p>
+      </nav>
+
+      <main class="w-[85%] mx-auto mt-8">
+        <div id="saldo-cards" class="flex justify-around space-x-8 mx-4 mt-8">
+          <div class="shadow-md w-[50%] p-4 space-y-2 rounded-lg">
+            <p
+              class="text-[--gasify-verde] font-bold text-center text-4xl"
+              id="total"
+            >
+              R$ 0,00
+            </p>
+            <p
+              class="text-[--gasify-preto-claro] text-center text-xl font-semibold"
+            >
+              Valor a pagar
+            </p>
+          </div>
+
+          <div class="shadow-md w-[50%] p-4 space-y-2 rounded-lg">
+            <p
+              class="flex justify-center items-center text-[--gasify-verde] font-bold text-center text-4xl"
+              id="total-cc"
+            >
+              <img
+                src="./images/logoLS-no-bg.svg"
+                class="mr-2"
+                alt="créditos de carbono"
+              />0 CC
+            </p>
+            <p
+              class="text-[--gasify-preto-claro] text-center text-xl font-semibold"
+            >
+              Créditos de carbono verde a receber
+            </p>
+          </div>
+        </div>
+        <form>
+          <div
+            id="card-combustiveis"
+            class="grid max-w-[85%] justify-between mx-auto my-12 md:grid-cols-2 gap-y-12 gap-x-12"
+          ></div>
+
+          <button
+            type="submit"
+            class="w-full transition-all bg-[--gasify-verde-claro] mt-8 rounded-lg text-white font-semibold h-16 hover:bg-[--gasify-verde]"
+          >
+            Ir ao pagamento
+          </button>
+        </form>
+      </main>
+    </div>
+    <footer class="relative">
+      <img class="w-[100%]" src="./images/footer.png" alt="" />
+      <img
+        class="absolute bottom-0 right-0 max-w-md"
+        src="./images/plantaAtendimento.png"
+      />
+    </footer>
     <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/atendimento.js"></script>
   </body>
 </html>

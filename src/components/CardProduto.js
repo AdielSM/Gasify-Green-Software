@@ -10,7 +10,7 @@ export default function CardProduto(product) {
           <p class="font-semibold text-2xl">${product.name}</p>
           <p>R$ ${formatNumberPer100(product.price)}/Litro</p>
       </div>
-      <div class="flex space-x-8 mx-4 justify-between flex-wrap">
+      <div class="flex lg:space-x-8 mx-4 justify-between flex-wrap">
           <div class="space-y-2">
               <p class="text-md">Litros (L)</p>
               <input type="number" step="0.01" min="0" oninput="onChangeInputLitro(event, ${formatNumberPer100(

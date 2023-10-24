@@ -2,21 +2,19 @@ import { products } from "./data/products.js";
 
 import CardProduto from "./components/CardProduto";
 
-// Executa ao iniciar o script
+// Executa ao carregar a página
 (() => {
   const cardCombustiveis = document.querySelector("#card-combustiveis");
   cardCombustiveis.innerHTML = products.map(CardProduto).join("");
 
-  // Comentei porque poderia guardar de atendimento anterior, precisa lidar com isso!
-  // if (window.localStorage.getItem('@gasify-carrinho') === null) {
   window.localStorage.setItem("@gasify-carrinho", JSON.stringify([]));
-  // }
 
-  // document.getElementsByName('form').forEach(form => {
-  //   form.onsubmit (event) => event.prevent.default
-  // })
+  document.getElementsByName('form').forEach(form => {
+    form.onsubmit = (event) => event.preventDefault()
+  })
 })();
 
+// Executa ao clicar no botão de adicionar ao carrinho
 export function atualizarCarrinho(itemCarrinho) {
   const carrinho = JSON.parse(window.localStorage.getItem("@gasify-carrinho"));
   if (carrinho && carrinho.find((item) => item.id === itemCarrinho.id)) {
