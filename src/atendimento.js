@@ -1,5 +1,4 @@
 import { products } from "./data/products.js";
-
 import CardProduto from "./components/CardProduto";
 
 // Executa ao carregar a página
