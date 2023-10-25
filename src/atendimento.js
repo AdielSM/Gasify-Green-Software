@@ -8,10 +8,6 @@ import CardProduto from "./components/CardProduto";
   cardCombustiveis.innerHTML = products.map(CardProduto).join("");
 
   window.localStorage.setItem("@gasify-carrinho", JSON.stringify([]));
-
-  document.getElementsByName('form').forEach(form => {
-    form.onsubmit = (event) => event.preventDefault()
-  })
 })();
 
 // Executa ao clicar no botão de adicionar ao carrinho
@@ -47,8 +43,6 @@ function atualizarValorTotal(valorTotal) {
 
 function atualizarCCTotal(ccTotal) {
   document.querySelector(
-    "#total-cc"
-  ).innerHTML = `<img src="./images/logoLS-no-bg.svg" class="mr-2" alt="créditos de carbono"/>${ccTotal.toFixed(
-    2
-  )} CC`;
+    "#total-cc-text"
+  ).innerHTML = `${ccTotal.toFixed(2)} CC`;
 }
