@@ -3,7 +3,7 @@
           <p class="font-semibold text-2xl">${e.name}</p>
           <p>R$ ${d(e.price)}/Litro</p>
       </div>
-      <div class="flex lg:space-x-8 mx-4 justify-between flex-wrap">
+      <div class="flex space-x-8 mx-4 justify-between flex-wrap">
           <div class="space-y-2">
               <p class="text-md">Litros (L)</p>
               <input type="number" step="0.01" min="0" oninput="onChangeInputLitro(event, ${d(e.price)})" class="border-[--gasify-cinza] border-2 rounded-md p-2 " id="quantidade" placeholder="0"/>
