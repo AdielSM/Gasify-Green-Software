@@ -6,11 +6,11 @@
     <link rel="icon" href="/Gasify-Green-Software/assets/logoLS-no-bg-e96be4a8.svg" type="image/x-icon" />
 
     <title>Gasify</title>
-    <script type="module" crossorigin src="/Gasify-Green-Software/assets/index-1003f637.js"></script>
-    <link rel="modulepreload" crossorigin href="/Gasify-Green-Software/assets/main-9ddb5c4d.js">
-    <link rel="stylesheet" href="/Gasify-Green-Software/assets/main-0c94cfad.css">
+    <script type="module" crossorigin src="/Gasify-Green-Software/assets/index-3f33f7ed.js"></script>
+    <link rel="modulepreload" crossorigin href="/Gasify-Green-Software/assets/main-ae18ecca.js">
+    <link rel="stylesheet" href="/Gasify-Green-Software/assets/main-88efdb0d.css">
   </head>
-  <body class="bg-[--gasify-branco] min-h-[90vh]">
+  <body class="bg-[--gasify-branco] min-h-[100vh]">
       <header
         class="bg-white content-center max-w-[100vw] flex rounded-3xl justify-between mx-12 mt-12 mb-6 p-4 shadow-md"
       >
@@ -46,8 +46,24 @@
           />
         </div>
       </header>
+ 
+      <div id="compatibility" class="md:hidden flex flex-col justify-center items-center text-center h-[70vh] my-auto">
+        <img
+          src="/Gasify-Green-Software/assets/compatibility-7a369496.png"
+          alt="Compatibility icon"
+          class="w-40 h-40"
+        />
+          <p class="text-[--gasify-preto-claro] ml-2 font-bold font-2xl">
+            Seu dispositivo não é compatível com o Gasify
+          </p>
+        <div class="flex justify-center items-center">
+          <p class="text-[--gasify-preto-claro]">
+            Por favor, acesse o Gasify em um dispositivo com tela maior
+          </p>
+        </div>
+      </div>
 
-      <nav class="flex justify-around space-x-8 mx-4 my-14 text-center">
+      <nav class="justify-around space-x-8 mx-4 my-14 text-center hidden md:flex">
         <p
           class="w-[100%] font-medium border-[--gasify-preto] border-b-2 cursor-pointer text-[--gasify-preto] transition-all hover:border-b-[--gasifty-cinza] hover:text-[--gasify-cinza]"
           id="nav-escolha-produto"
@@ -68,7 +84,7 @@
         </p>
       </nav>
 
-      <main class="w-[85%] mx-auto max-w-[100vw] mt-12">
+      <main class="w-[85%] mx-auto mt-12 hidden md:flex md:flex-col">
         <div id="saldo-cards" class="flex justify-around space-x-8 mx-4 mt-8">
           <div class="shadow-md w-[50%] p-4 space-y-2 rounded-lg flex flex-col justify-around">
             <p
