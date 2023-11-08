@@ -5,16 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body class="gasify-fundo">
     <header>
         <div class="flex justify-between items-start">
             <div class="flex justify-around mt-[75px] ml-[75px] gap-x-5">
                 <img src="./images/logoLS-no-bg.svg" alt="Gasify logo" class="w-[100px]" />
                 <img src="./images/gasify.svg" class="w-[200px]" alt="">
+                <link rel="icon" href="./images/logoLS-no-bg.svg" type="image/x-icon" />
             </div>
-            <img class="w-[400px] h-[400px]" src="./images/FolhasVerdesCantoSuperior.png" alt=""/>
+            <img class="w-[400px] h-[400px] absolute right-0" src="./images/FolhasVerdesCantoSuperior.png" alt=""/>
         </div>
     </header>
+    <main class="flex justify-around items-start h-auto">
+        <img src="/images/GarotoLogin.png" class="ml-[-5%] w-[750px]" alt="">
+        <div class="flex flex-col justify-center items-center gap-y-[50px] mt-10 w-auto h-auto">
+            <h1 class="text-neutral-900 text-5xl font-semibold font-['Poppins'] gap-y-8 ">Acesse sua conta!</h1>
+            <form action="" class="bg-white rounded-[20px] shadow-2xl w-auto h-auto">
+                <div class="flex flex-col p-10">
+                    <div class="flex flex-col justify-center mt-5 gap-y-1">
+                        <label for="matricula" class="text-gray-800 text-xl font-semibold font-['Poppins']">Matrícula</label>
+                        <input placeholder="12345678" type="matricula" name="matricula" id="matricula" class="border-2 border-black rounded-md p-6 w-[700px] h-[50px]"/>
+                    </div>
+                    <div class="flex flex-col justify-center mt-5 content-start gap-y-1">
+                        <label for="password" class="text-gray-800 text-xl font-semibold font-['Poppins']">Senha</label>
+                        <input placeholder="12345678" type="password" name="password" id="password" class="border-2 border-black rounded-md p-6 w-[700px] h-[50px]"/>
+                    </div>
+                    <div class="flex justify-end">
+                        <a class=" text-zinc-700 text-base font-normal font-['Poppins'] p-6" href="">Esqueci a senha</a>
+                    </div>
+                    <div class="flex flex-col justify-center items-center mt-5 mb-4">
+                        <button class="w-[251px] h-[52px] rounded-lg bg-lime-500 text-white text-xl font-semibold font-['Poppins']">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
     <script type="module" src="./src/main.js"></script>
 </body>
 </html>
