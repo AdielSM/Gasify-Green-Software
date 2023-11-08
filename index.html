@@ -1,141 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/Gasify-Green-Software/assets/logoLS-no-bg-e96be4a8.svg" type="image/x-icon" />
 
-    <title>Gasify</title>
-    <script type="module" crossorigin src="/Gasify-Green-Software/assets/index-3f33f7ed.js"></script>
-    <link rel="modulepreload" crossorigin href="/Gasify-Green-Software/assets/main-ae18ecca.js">
-    <link rel="stylesheet" href="/Gasify-Green-Software/assets/main-88efdb0d.css">
-  </head>
-  <body class="bg-[--gasify-branco] min-h-[100vh]">
-      <header
-        class="bg-white content-center max-w-[100vw] flex rounded-3xl justify-between mx-12 mt-12 mb-6 p-4 shadow-md"
-      >
-        <div
-          id="gasify-logo"
-          class="flex content-center items-center space-x-2"
-        >
-          <img src="/Gasify-Green-Software/assets/logoLS-no-bg-e96be4a8.svg" alt="Gasify logo" class="" />
-          <img src="/Gasify-Green-Software/assets/gasify-b6ac11cc.svg" alt="Gasify" class="hidden lg:flex"/>
-        </div>
-        <div class="flex justify-between items-center">
-          <img src="/Gasify-Green-Software/assets/logo_posto-761dacf0.svg" alt="Logo posto canaã" />
-          <p class="text-[--gasify-preto-claro] ml-8 hidden lg:flex lg:flex-col">
-            Rede de Postos de Combustível Canaã
-          </p>
-        </div>
-        <div class="flex justify-between items-center">
-          <img
-            class="max-w-10 max-h-10 rounded-full m-2"
-            id="user"
-            src="/Gasify-Green-Software/assets/FrentistaLC-6a7e1bbf.jpg"
-            alt="User icon"
-          />
-          <div id="username" class="hidden lg:flex lg:flex-col">
-            <p class="text-[--gasify-preto-claro] text-center">Bem-vindo</p>
-            <span class="font-semibold">Luiz Carlos!</span>
-          </div>
-          <img
-            id="arrow"
-            src="/Gasify-Green-Software/assets/logout-5e780a3b.svg"
-            alt="Arrow icon"
-            class="ml-12 w-7"
-          />
-        </div>
-      </header>
- 
-      <div id="compatibility" class="md:hidden flex flex-col justify-center items-center text-center h-[70vh] my-auto">
-        <img
-          src="/Gasify-Green-Software/assets/compatibility-7a369496.png"
-          alt="Compatibility icon"
-          class="w-40 h-40"
-        />
-          <p class="text-[--gasify-preto-claro] ml-2 font-bold font-2xl">
-            Seu dispositivo não é compatível com o Gasify
-          </p>
-        <div class="flex justify-center items-center">
-          <p class="text-[--gasify-preto-claro]">
-            Por favor, acesse o Gasify em um dispositivo com tela maior
-          </p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/Gasify-Green-Software/assets/logoLS-no-bg-e96be4a8.svg" type="image/x-icon" />
+
+  <title>Gasify</title>
+  <script type="module" crossorigin src="/Gasify-Green-Software/assets/index-fb61273b.js"></script>
+  <link rel="modulepreload" crossorigin href="/Gasify-Green-Software/assets/main-5f11c3f3.js">
+  <link rel="stylesheet" href="/Gasify-Green-Software/assets/main-9304c08a.css">
+</head>
+
+<body class="bg-[--gasify-branco] min-h-[100vh]">
+  <header class="bg-white content-center max-w-[100vw] flex rounded-3xl justify-between mx-12 mt-12 mb-6 p-4 shadow-md">
+    <div id="gasify-logo" class="flex content-center items-center space-x-2">
+      <img src="/Gasify-Green-Software/assets/logoLS-no-bg-e96be4a8.svg" alt="Gasify logo" class="" />
+      <img src="/Gasify-Green-Software/assets/gasify-b6ac11cc.svg" alt="Gasify" class="hidden lg:flex" />
+    </div>
+    <div class="flex justify-between items-center">
+      <img src="/Gasify-Green-Software/assets/logo_posto-761dacf0.svg" alt="Logo posto canaã" />
+      <p class="text-[--gasify-preto-claro] ml-8 hidden lg:flex lg:flex-col">
+        Rede de Postos de Combustível Canaã
+      </p>
+    </div>
+    <div class="flex justify-between items-center">
+      <img class="max-w-10 max-h-10 rounded-full m-2" id="user" src="/Gasify-Green-Software/assets/FrentistaLC-6a7e1bbf.jpg" alt="User icon" />
+      <div id="username" class="hidden lg:flex lg:flex-col">
+        <p class="text-[--gasify-preto-claro] text-center">Bem-vindo</p>
+        <span class="font-semibold">Luiz Carlos!</span>
+      </div>
+      <img id="arrow" src="/Gasify-Green-Software/assets/logout-5e780a3b.svg" alt="Arrow icon" class="ml-12 w-7" />
+    </div>
+  </header>
+
+  <div id="compatibility" class="md:hidden flex flex-col justify-center items-center text-center h-[70vh] my-auto">
+    <img src="/Gasify-Green-Software/assets/compatibility-7a369496.png" alt="Compatibility icon" class="w-40 h-40" />
+    <p class="text-[--gasify-preto-claro] ml-2 font-bold font-2xl">
+      Seu dispositivo não é compatível com o Gasify
+    </p>
+    <div class="flex justify-center items-center">
+      <p class="text-[--gasify-preto-claro]">
+        Por favor, acesse o Gasify em um dispositivo com tela maior
+      </p>
+    </div>
+  </div>
+
+  <nav class="justify-around space-x-8 mx-4 my-14 text-center hidden md:flex">
+    <p class="w-[100%] font-medium border-[--gasify-preto] border-b-2 cursor-pointer text-[--gasify-preto] transition-all hover:border-b-[--gasifty-cinza] hover:text-[--gasify-cinza]"
+      id="nav-escolha-produto">
+      Abastecimento
+    </p>
+    <p class="w-[100%] font-medium border-[--gasify-preto-claro] border-b-2 cursor-pointer text-[--gasify-cinza-claro] transition-all hover:border-b-[--gasifty-cinza] hover:text-[--gasify-cinza]"
+      id="nav-uso-cc">
+      Use seu Carbon Cash para resgatar!
+    </p>
+    <p class="w-[100%] font-medium border-[--gasify-preto-claro] border-b-2 cursor-pointer text-[--gasify-cinza-claro] transition-all hover:border-b-[--gasifty-cinza] hover:text-[--gasify-cinza]"
+      id="nav-pagamento">
+      Pagamento
+    </p>
+  </nav>
+
+  <main class="w-[85%] mx-auto mt-12 hidden md:flex md:flex-col">
+    <div id="saldo-cards" class="flex justify-around space-x-8 mx-4 mt-8">
+      <div class="shadow-md w-[50%] p-4 space-y-2 rounded-lg flex flex-col justify-around">
+        <p class="text-[--gasify-verde] font-bold text-center text-4xl" id="total">
+          R$ 0,00
+        </p>
+        <p class="text-[--gasify-preto-claro] text-center text-xl font-semibold">
+          Valor a pagar
+        </p>
       </div>
 
-      <nav class="justify-around space-x-8 mx-4 my-14 text-center hidden md:flex">
-        <p
-          class="w-[100%] font-medium border-[--gasify-preto] border-b-2 cursor-pointer text-[--gasify-preto] transition-all hover:border-b-[--gasifty-cinza] hover:text-[--gasify-cinza]"
-          id="nav-escolha-produto"
-        >
-          Abastecimento
+      <div class="shadow-md w-[50%] p-4 space-y-2 rounded-lg">
+        <p class="flex justify-center items-center text-[--gasify-verde] font-bold text-center text-4xl" id="total-cc">
+          <img src="/Gasify-Green-Software/assets/logoLS-no-bg-e96be4a8.svg" class="mr-2" alt="Carbon Cash icon" /><span id="total-cc-text">0
+            CC</span>
         </p>
-        <p
-          class="w-[100%] font-medium border-[--gasify-preto-claro] border-b-2 cursor-pointer text-[--gasify-cinza-claro] transition-all hover:border-b-[--gasifty-cinza] hover:text-[--gasify-cinza]"
-          id="nav-uso-cc"
-        >
-          Use seu Carbon Cash para resgatar!
+        <p class="text-[--gasify-preto-claro] text-center text-xl font-semibold">
+          Carbon Cash a receber
         </p>
-        <p
-          class="w-[100%] font-medium border-[--gasify-preto-claro] border-b-2 cursor-pointer text-[--gasify-cinza-claro] transition-all hover:border-b-[--gasifty-cinza] hover:text-[--gasify-cinza]"
-          id="nav-pagamento"
-        >
-          Pagamento
-        </p>
-      </nav>
+      </div>
+    </div>
+    <form>
+      <div id="card-combustiveis" class="flex flex-wrap justify-between mx-auto my-12 gap-y-12 gap-x-12"></div>
 
-      <main class="w-[85%] mx-auto mt-12 hidden md:flex md:flex-col">
-        <div id="saldo-cards" class="flex justify-around space-x-8 mx-4 mt-8">
-          <div class="shadow-md w-[50%] p-4 space-y-2 rounded-lg flex flex-col justify-around">
-            <p
-              class="text-[--gasify-verde] font-bold text-center text-4xl"
-              id="total"
-            >
-              R$ 0,00
-            </p>
-            <p
-              class="text-[--gasify-preto-claro] text-center text-xl font-semibold"
-            >
-              Valor a pagar
-            </p>
-          </div>
+      <button type="submit"
+        class="w-full transition-all bg-[--gasify-verde-claro] mt-8 rounded-lg text-white font-semibold h-16 hover:bg-[--gasify-verde]">
+        Ir ao pagamento
+      </button>
+    </form>
+  </main>
+  <footer class="">
+    <img class="w-[100%]" src="/Gasify-Green-Software/assets/footer-6f94b053.png" alt="" />
+  </footer>
+  
+  
+</body>
 
-          <div class="shadow-md w-[50%] p-4 space-y-2 rounded-lg">
-            <p
-              class="flex justify-center items-center text-[--gasify-verde] font-bold text-center text-4xl"
-              id="total-cc"
-            >
-              <img
-                src="/Gasify-Green-Software/assets/logoLS-no-bg-e96be4a8.svg"
-                class="mr-2"
-                alt="Carbon Cash icon"
-              /><span id="total-cc-text">0 CC</span>
-            </p>
-            <p
-              class="text-[--gasify-preto-claro] text-center text-xl font-semibold"
-            >
-              Carbon Cash a receber
-            </p>
-          </div>
-        </div>
-        <form>
-          <div
-            id="card-combustiveis"
-            class="flex flex-wrap justify-between mx-auto my-12 gap-y-12 gap-x-12"
-          ></div>
-
-          <button
-            type="submit"
-            class="w-full transition-all bg-[--gasify-verde-claro] mt-8 rounded-lg text-white font-semibold h-16 hover:bg-[--gasify-verde]"
-          >
-            Ir ao pagamento
-          </button>
-        </form>
-      </main>
-    <footer class="">
-      <img class="w-[100%]" src="/Gasify-Green-Software/assets/footer-9c15d829.png" alt="" />
-    </footer>
-    
-    
-  </body>
 </html>
