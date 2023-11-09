@@ -20,6 +20,7 @@
 - [ ] balanço de carbono
 - [ ] Melhorar IDs com Atomic Design
 - [ ] Corrigir IDs não únicos no HTML
+- [ ] Deixar cards dinâmicos em divulgacao.html
 
 - [ ] Form Use seus créditos de carbono!
 - [ ] Form Pagamento
