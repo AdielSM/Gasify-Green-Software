@@ -1,9 +1,16 @@
-import { products } from "./data/products.js";
+// import { products } from "./data/products.js";
+import api from "./services/api.js";
 import CardProduto from "./components/CardProduto";
 
+async function getCombustivel() {
+  const response = await api.get("/combustivel");
+  return response.data;
+}
+
 // Executa ao carregar a página
-(() => {
+(async () => {
   const cardCombustiveis = document.querySelector("#card-combustiveis");
+  const products = await getCombustivel();
   cardCombustiveis.innerHTML = products.map(CardProduto).join("");
 
   window.localStorage.setItem("@gasify-carrinho", JSON.stringify([]));
