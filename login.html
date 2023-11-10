@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logue em sua conta - Gasify</title>
-  <script type="module" crossorigin src="/Gasify-Green-Software/assets/main-dbe372d7.js"></script>
+  <script type="module" crossorigin src="/Gasify-Green-Software/assets/login-444e3b7b.js"></script>
+  <link rel="modulepreload" crossorigin href="/Gasify-Green-Software/assets/main-dbe372d7.js">
   <link rel="stylesheet" href="/Gasify-Green-Software/assets/main-909e6df9.css">
 </head>
 <body id="gasify-fundo" class="h-[100vh] w-[100vw] bg-[--gasify-fundo] overscroll-none overflow-hidden">
@@ -37,7 +38,7 @@
         <div class="flex flex-col justify-center items-center gap-y-[25px] w-auto h-auto self-start mt-10 2xl:mt-28 mb-[50] ">
             <img src="/Gasify-Green-Software/assets/GarotoLogin-a5cd13a3.png" class="hidden lg:flex fixed left-0 bottom-0 ml-[-5%] w-[46rem] 2xl:ml-[-5%] 2xl:w-[46rem] self-end md:w-[32rem] md:ml-[-10%]" alt="">
             <h1 class="text-neutral-900 2xl:text-5xl font-semibold font-['Poppins'] gap-y-8 xl:text-4xl">Acesse sua conta!</h1>
-            <form action="" class="bg-white rounded-[20px] shadow-2xl 2xl:w-auto 2xl:h-auto xl:w-[auto] xl:h-[auto] z-10">
+            <form id="form" class="bg-white rounded-[20px] shadow-2xl 2xl:w-auto 2xl:h-auto xl:w-[auto] xl:h-[auto] z-10">
                 <div class="flex flex-col p-10">
                     <div class="flex flex-col justify-center mt-5 gap-y-1">
                         <label for="matricula" class="text-gray-800 text-xl font-semibold font-['Poppins']">Matrícula</label>
@@ -57,6 +58,7 @@
             </form>
         </div>
     </main>
+    
     
 </body>
 </html>
