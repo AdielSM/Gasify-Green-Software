@@ -35,7 +35,7 @@
         <div class="flex flex-col justify-center items-center gap-y-[25px] w-auto h-auto self-start mt-10 2xl:mt-28 mb-[50] ">
             <img src="/images/GarotoLogin.png" class="hidden lg:flex fixed left-0 bottom-0 ml-[-5%] w-[46rem] 2xl:ml-[-5%] 2xl:w-[46rem] self-end md:w-[32rem] md:ml-[-10%]" alt="">
             <h1 class="text-neutral-900 2xl:text-5xl font-semibold font-['Poppins'] gap-y-8 xl:text-4xl">Acesse sua conta!</h1>
-            <form action="" class="bg-white rounded-[20px] shadow-2xl 2xl:w-auto 2xl:h-auto xl:w-[auto] xl:h-[auto] z-10">
+            <form id="form" class="bg-white rounded-[20px] shadow-2xl 2xl:w-auto 2xl:h-auto xl:w-[auto] xl:h-[auto] z-10">
                 <div class="flex flex-col p-10">
                     <div class="flex flex-col justify-center mt-5 gap-y-1">
                         <label for="matricula" class="text-gray-800 text-xl font-semibold font-['Poppins']">Matrícula</label>
@@ -55,6 +55,7 @@
             </form>
         </div>
     </main>
+    <script type="module" src="./src/services/login.js"></script>
     <script type="module" src="./src/main.js"></script>
 </body>
 </html>

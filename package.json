@@ -9,6 +9,7 @@
     "preview": "vite preview --host --port 8080"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.38.4",
     "axios": "^1.6.1",
     "chart.js": "^4.4.0"
   },
